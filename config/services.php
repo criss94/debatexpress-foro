@@ -35,4 +35,22 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => env('FACEBOOK_CLIENT_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+        'redirect' => env('FACEBOOK_CALLBACK_URL'),
+    ],
+
+    'twitter' => [
+        'client_id' => 'iQPI5YAbsZ67huBvfeoQj0H4N',
+        'client_secret' => 'qkWZtvACsfmREDVsE8aGVnbLVDPj3j8m7XbLXg75FDfX256T4n',
+        'redirect' => 'http://localhost:8000/auth/twitter/callback',
+    ],
+
+    'google' => [
+        'client_id' => '50122510684-sd26rh2f3t6p8465qb75vv55cli7nm35.apps.googleusercontent.com',
+        'client_secret' => 'mcabin_fXVDr76feb58-jKzv',
+        'redirect' => 'http://localhost:8000/auth/google/callback',
+    ],
+
 ];
